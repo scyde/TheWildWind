@@ -1,6 +1,6 @@
 {
   "name": "thewildwind",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Soak Shop",
   "main": "app.js",
   "scripts": {
