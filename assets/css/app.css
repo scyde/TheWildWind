@@ -1,0 +1,9 @@
+body {
+    margin-top: 70px;
+}
+.ui.small.image.thumbnail {
+    background-size:contain;
+    min-height:100px;
+    background-repeat:no-repeat;
+    background-position: center;
+}
