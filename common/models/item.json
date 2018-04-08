@@ -1,0 +1,33 @@
+{
+  "name": "item",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true,
+    "mongodb": {
+      "collection": "items"
+    }
+  },
+  "properties": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "image": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "string",
+      "required": true
+    },
+    "reviews": {
+      "type": "array",
+      "required": false
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

@@ -1,0 +1,22 @@
+<% include partials/header %>
+
+<div class="ui container">
+    <h1>Hello on register route</h1>
+    <form class="ui form" action="/register" method="POST">
+        <div class="field">
+            <div class="ui label">
+                Имя пользователя
+            </div>
+            <input name="username" type="text" placeholder="Имя пользователя" required>
+        </div>
+        <div class="field">
+            <div class="ui label">
+                Пароль
+            </div>
+            <input name="password" type="text" placeholder="Пароль" required>
+        </div>
+        <button class="ui basic blue button">Зарегистрироваться</button>
+    </form>
+</div>
+
+<% include partials/footer %>

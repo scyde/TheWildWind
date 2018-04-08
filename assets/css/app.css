@@ -7,3 +7,7 @@ body {
     background-repeat:no-repeat;
     background-position: center;
 }
+
+footer {
+    margin-top: 50px;
+}
