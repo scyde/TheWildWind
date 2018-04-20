@@ -6,7 +6,7 @@ const boot = require('loopback-boot')
 
 const app = module.exports = loopback()
 
-app.use(loopback.static(path.resolve(__dirname, '../public')))
+app.use('/public', loopback.static(path.resolve(__dirname, '../public')))
 
 app.start = function() {
   // start the web server
@@ -26,9 +26,20 @@ app.start = function() {
 boot(app, __dirname, function(err) {
   if (err) throw err
 
-  app.set('view engine','ejs')
-    app.get('/*',(req,res) => {
-        res.render('index')
+    app.get('/',(req,res) => {
+        res.sendFile('/public/index.html', {root: './'})
+    })
+    app.get('/main',(req,res) => {
+        res.sendFile('/public/index.html', {root: './'})
+    })
+    app.get('/main/*',(req,res) => {
+        res.sendFile('/public/index.html', {root: './'})
+    })
+    app.get('/about',(req,res) => {
+        res.sendFile('/public/index.html', {root: './'})
+    })
+    app.get('/basket',(req,res) => {
+        res.sendFile('/public/index.html', {root: './'})
     })
   // start the server if `$ node server.js`
   if (require.main === module)
