@@ -1,12 +1,12 @@
 {
   "db": {
-    "host": "localhost",
+    "host": "mongodb.net",
     "port": 27017,
-    "url": "",
+    "url": "mongodb://admin:adminTWW@thewildwind-shard-00-00-djjvi.mongodb.net:27017,thewildwind-shard-00-01-djjvi.mongodb.net:27017,thewildwind-shard-00-02-djjvi.mongodb.net:27017/test?ssl=true&replicaSet=TheWildWind-shard-0&authSource=admin",
     "database": "TheWildWind",
-    "password": "",
+    "password": "adminTWW",
     "name": "db",
-    "user": "",
+    "user": "admin",
     "connector": "mongodb"
   }
 }
