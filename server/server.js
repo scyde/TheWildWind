@@ -5,12 +5,13 @@ const loopback = require('loopback')
 const boot = require('loopback-boot')
 
 const app = module.exports = loopback()
+const port = process.env.PORT || 80
 
 app.use('/public', loopback.static(path.resolve(__dirname, '../public')))
 
 app.start = function() {
   // start the web server
-  return app.listen(function() {
+  return app.listen(port, function() {
     app.emit('started')
     const baseUrl = app.get('url').replace(/\/$/, '')
     console.log('Web server listening at: %s', baseUrl)
