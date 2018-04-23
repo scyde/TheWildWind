@@ -1,7 +1,7 @@
 {
   "db": {
-    "url": "mongodb://admin:adminTWW@thewildwind-shard-00-00-djjvi.mongodb.net:27017,thewildwind-shard-00-01-djjvi.mongodb.net:27017,thewildwind-shard-00-02-djjvi.mongodb.net:27017/TheWildWind?ssl=true&replicaSet=TheWildWind-shard-0&authSource=admin",
-    "database": "TheWildWind",
+    "url": "mongodb://scyde:Fatiano99@ds115758.mlab.com:15758/heroku_r1t2kscl",
+    "database": "heroku_r1t2kscl",
     "connector": "mongodb",
       "connectionTimeout": 5000
   }
