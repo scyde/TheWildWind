@@ -30,13 +30,19 @@ boot(app, __dirname, function(err) {
     app.get('/',(req,res) => {
         res.sendFile('/public/index.html', {root: './'})
     })
-    app.get('/main',(req,res) => {
+    app.get('/news',(req,res) => {
         res.sendFile('/public/index.html', {root: './'})
     })
-    app.get('/main/*',(req,res) => {
+    app.get('/catalog/*',(req,res) => {
+        res.sendFile('/public/index.html', {root: './'})
+    })
+    app.get('/catalog',(req,res) => {
         res.sendFile('/public/index.html', {root: './'})
     })
     app.get('/about',(req,res) => {
+        res.sendFile('/public/index.html', {root: './'})
+    })
+    app.get('/contacts',(req,res) => {
         res.sendFile('/public/index.html', {root: './'})
     })
     app.get('/basket',(req,res) => {

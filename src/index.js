@@ -9,19 +9,19 @@ import { createBrowserHistory } from 'history'
 import { composeWithDevTools } from 'redux-devtools-extension'
 import { BrowserRouter, Route, Switch } from 'react-router-dom'
 import { syncHistoryWithStore } from 'react-router-redux'
-import { Provider } from 'react-redux'
+import {Provider} from 'react-redux'
+import rootReducer from 'reducers'
 import Main from 'main'
 import Landing from 'landing'
-import TWWReducer from 'reducers'
 
-const store = createStore(TWWReducer)
+const store = createStore(rootReducer)
 
 ReactDOM.render(
   <Provider store={store}>
     <BrowserRouter>
       <Switch>
         <Route exact path="/" component={Landing} />
-        <Route path="/main" component={Main} />
+        <Route path="/" component={Main} />
       </Switch>
     </BrowserRouter>
   </Provider>,
