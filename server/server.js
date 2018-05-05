@@ -7,7 +7,7 @@ const boot = require('loopback-boot')
 const app = module.exports = loopback()
 const port = process.env.PORT || 80
 
-app.use('/public', loopback.static(path.resolve(__dirname, '../public')))
+app.use('/', loopback.static(path.resolve(__dirname, '../public')))
 
 app.start = function() {
   // start the web server
