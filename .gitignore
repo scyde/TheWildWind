@@ -14,5 +14,6 @@
 .idea
 .project
 .strong-pm
+.gitignore
 coverage
 npm-debug.log
