@@ -1,16 +1,19 @@
 import './main.css'
-
 import React from 'react'
 import ReactDOM from 'react-dom'
-import { createStore } from 'redux'
-import { createBrowserHistory } from 'history'
-import { BrowserRouter, Route, Switch } from 'react-router-dom'
+import { createStore, applyMiddleware } from 'redux'
+import { BrowserRouter, Route, Switch, } from 'react-router-dom'
 import {Provider} from 'react-redux'
 import rootReducer from 'reducers'
 import Main from 'main'
 import Landing from 'landing'
+import thunk from 'redux-thunk'
 
-const store = createStore(rootReducer)
+const createStoreWithMiddleware = applyMiddleware(thunk)(createStore)
+const store = createStoreWithMiddleware(
+    rootReducer,
+    window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
+)
 
 ReactDOM.render(
   <Provider store={store}>
