@@ -19,3 +19,4 @@ coverage
 npm-debug.log
 node_modules
 !src/node_modules
+stats.json
