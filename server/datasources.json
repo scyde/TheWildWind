@@ -1,7 +1,7 @@
 {
   "db": {
-    "url": "mongodb://scyde:Fatiano99@ds115758.mlab.com:15758/heroku_r1t2kscl",
-    "database": "heroku_r1t2kscl",
+    "url": "mongodb://localhost:27017/TheWildWind",
+    "database": "TheWildWind",
     "connector": "mongodb",
       "connectionTimeout": 5000
   }

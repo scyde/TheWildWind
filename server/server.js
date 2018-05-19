@@ -5,7 +5,7 @@ const loopback = require('loopback')
 const boot = require('loopback-boot')
 
 const app = module.exports = loopback()
-const port = process.env.PORT || 80
+const port = process.env.PORT || 3000
 
 app.use('/', loopback.static(path.resolve(__dirname, '../public')))
 

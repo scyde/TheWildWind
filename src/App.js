@@ -8,6 +8,7 @@ import rootReducer from 'reducers'
 import {BrowserRouter} from 'react-router-dom'
 import thunk from 'redux-thunk'
 
+
 const createStoreWithMiddleware = applyMiddleware(thunk)(createStore)
 const store = createStoreWithMiddleware(
     rootReducer,
