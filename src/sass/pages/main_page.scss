@@ -1,12 +1,10 @@
-@import 'var.scss';
-
 .main {
     display: flex;
     flex-direction: column;
     max-width: 100% !important;
     width: 90%;
     height: auto;
-    background-color: $bg-color;
+    background-color: $color-primary;
     margin-left: auto !important;
     margin-right: auto !important;
     padding: 1em;

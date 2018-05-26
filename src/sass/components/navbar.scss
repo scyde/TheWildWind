@@ -1,21 +1,19 @@
-@import 'var.scss';
-
 .ui.secondary.menu {
-    background-color: $bg-color;
+    background-color: $color-primary;
     margin-top: 0;
 }
 
 .ui.secondary.pointing.menu .item {
-    background-color: darken($bg-color, 10%);
+    background-color: darken($color-primary, 10%);
     .active {
         font-weight: 400;
     }
 }
 
 .ui.secondary.pointing.menu .item.selected {
-    background-color: rgba($bg-color, 0.8);
+    background-color: rgba($color-primary, 0.8);
     border-bottom: 2px solid black;
 }
 .ui.secondary.pointing.menu a.item:hover {
-    background-color: rgba(darken($bg-color, 20%), 0.8);
+    background-color: rgba(darken($color-primary, 20%), 0.8);
 }

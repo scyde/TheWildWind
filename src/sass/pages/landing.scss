@@ -1,5 +1,3 @@
-@import 'var.scss';
-
 .ui.container.landing {
     color: black;
     text-align: center;
@@ -8,7 +6,7 @@
     left: 50%;
     transform: translateX(-50%);
     width: 50%;
-    background-color: $bg-color;
+    background-color: $color-primary;
     padding-bottom: 3vh;
     font-family: 'Roboto', serif;
     height: 50%;
